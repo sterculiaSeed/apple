@@ -6,10 +6,12 @@ if (!shop) {
     setTimeout(() => {
         location.href = './shop.html';
     }, 2000);
+} else {
+    $('title').text(`购买-${shop}-Apple(中国大陆)`);
 }
 
 // 在页面数据还没渲染完成之前，页面加载状态，添加一个加载层
-let index = layer.load(1, { shade: 0.3 })
+let index = layer.load(1, { shade: 1 })
 
 // 请求商品详情数据
 getList()
@@ -38,7 +40,6 @@ async function getList() {
 
         $('.detmap-fang img').prop('src', `${item.imgpath.split('+++')[0]}`)
 
-
         $('.detmap-r-box1').html(`
         <p>新款</p>
         <h1>购买<span> ${item.name}</span></h1>
@@ -65,7 +66,7 @@ async function getList() {
         // 绚烂结束关闭弹出层
         setTimeout(() => {
             layer.close(index);
-        }, 400)
+        }, 1000)
         // 点击切换图片
         // 获取盒子添加点击事件
         $('.detmap-r-box2>div').click(function () {
@@ -102,7 +103,6 @@ layui.use(['laypage', 'layer'], function () {
         let data2 = res1.data;
         // 遍历dat
         let str2 = '';
-        // console.log(data2);
 
         laypage.render({
             // 存放分页的容器
@@ -151,7 +151,6 @@ let num = 1;
 let username = getCookie('yonghuming');
 //1、先判断用户有没有登录
 $('.anniu>button').click(function () {
-    // console.log(username)
     if (!username) {
         // layer.msg('你未登录,登录后才可添加到购物袋', {
         //     time: 3000

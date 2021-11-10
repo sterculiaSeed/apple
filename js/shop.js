@@ -58,7 +58,7 @@ async function getonNew() {
     // 绚烂结束关闭弹出层
     setTimeout(() => {
         layer.close(index);
-    }, 400)
+    }, 1000)
 
 
 
