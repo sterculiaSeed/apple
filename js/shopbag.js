@@ -5,13 +5,6 @@ let index = layer.load(1, { shade: 0.3 })
 $(function () {
     let username = getCookie('yonghuming');
     if (!username) { // 未登录
-        // let index = layer.msg('请先登录', {
-        //     shade: [.7, '#666']
-        // });
-        // setTimeout(() => {
-        //     layer.close(index);
-        //     location.href = './login.html';
-        // }, 1500);
         $('.shopbag-con').html(`
             <div class="shop-top" style="text-align: left; margin-bottom:30px;">
             <h1 style="font-weight:500">你的购物袋中没有商品</h1>

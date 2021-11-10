@@ -74,6 +74,7 @@ let cuowu = document.querySelector('.cuowu');
 document.querySelector('button').onclick = function (e) {
     // 阻止默认事件
     e.preventDefault();
+    // console.log(12345)
     //获取表单中的value值 放在一个对象中
     data = {
         email: username.value,
@@ -98,7 +99,7 @@ document.querySelector('button').onclick = function (e) {
         //正则判断密码
         let reg2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{5,11}$/;
         //使用正则判断表单用户名
-        console.log(data.email);
+        // console.log(data.email);
         if (!reg1.test(data.email)) {
             cuowu.style['display'] = 'block';
             // 获取焦点
