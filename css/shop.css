@@ -1,0 +1,257 @@
+/*         头部代码      */
+#head .nav{
+    height: 44px;
+    background-color: rgba(0,0,0,.8);
+    /* position: relative; */
+}
+#head .nav .nav-con{
+    width: 996px;
+    height: 44px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    line-height: 44px;
+    position: relative;
+    
+}
+#head .nav .nav-con a{
+    font-size: 12px;
+    margin: 0 8px;
+    color: rgb(193, 193, 193);
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/* 购物袋代码 */
+#head .nav .gow{
+    width: 288px;
+    border: 1px solid #d2d2d7;
+    position: absolute;
+    z-index: 2;
+    right: -140px;
+    top: 48px;
+    border-radius: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+#head .nav .gow .gow-top{ 
+    color: #6e6e73;
+    padding: 12px 0 23px;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+#head .nav .gow .gow-bottom li{ 
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+#head .nav .gow .gow-bottom li a{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+#head .nav .gow .gow-bottom li i{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+/* 商店介绍代码 */
+.shops{
+    height: 250px;
+}
+.shops-con{
+    width: 980px;
+    height: 250px;
+    margin: 0 auto;
+    
+}
+.shops-left{
+    padding: 80px 0 64px;
+    float: left;
+}
+.shops-left h1{
+    font-size: 48px;
+    text-shadow: 10px;
+    font-weight: 500;
+}
+.shops-left h1 u{
+ color: #6e6e73;
+}
+.shops-right{
+    width: 192px;
+    padding: 90px 0 74px;
+    float: right;
+    /* border: 1px solid red; */
+}
+.shops-right .shops-r-top{
+    height: 48px;
+    /* border: 1px solid rgb(26, 21, 21); */
+}
+.shops-r-t-left,.shops-r-b-left{
+ float: left;
+}
+.shops-r-t-left img,.shops-r-b-left img{
+    height: 35px;
+    width: 35px;
+}
+.shops-r-t-right li,.shops-r-b-right li{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.shops-r-t-right a,.shops-r-b-right a{
+    font-size: 12px;
+    color: #0066cc;
+}
+/* 商店下图片代码 */
+.Mac{
+    height: 200px;
+}
+.Mac-con{
+    /* margin: 0 auto; */
+    /* border: 1px solid red; */
+    /* width: 980px; */
+    position: absolute;
+    left: calc(50% - 490px);
+}
+.Mac-con .box1{
+    width: 136px;
+    height: 148px;
+    /* border: 1px solid gray; */
+    float: left;
+    padding: 18px 8px 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 12px;
+}
+.Mac-con .box1 .Mac-img{
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.Mac-con .box1 img{
+    width: 120px;
+    height: 78px;
+}
+.Mac-con .box1 .Mac-a{
+    color: #1d1d1f;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+.Mac-con .box1 .Mac-a a:hover{
+    text-decoration:underline;
+}
+/* 商店上新代码 */
+.onNew-h2{
+    width: 980px;
+    height: 46px;
+    margin: 0 auto;
+}
+.onNew-h2 u{
+color: #6e6e73;
+}
+.onNew-bottom {
+    overflow: hidden;
+}
+.onNew-bottom .onNew-b-con {
+    width: 1260px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: calc(50% - 490px);
+    margin: 0 auto;
+
+}
+.onNew .onNew-b-box{
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 18px;
+}
+.onNew .onNew-b-box:hover{
+    /* 阴影效果 */
+    box-shadow: 2px 4px 10px  rgb(201, 201, 201);
+    transform: scale3d(1.01,1.01,1.01);
+    cursor: pointer;
+}
+.onNew .onNew-box{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid #0066cc; */
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.onNew .onNew-box li:nth-child(1){
+    color: #6e6e73;
+    font-size: 12px;
+}
+.onNew .onNew-box li:nth-child(2){
+    color: #1d1d1f;
+    font-size: 28px;
+    line-height: 60px;
+    font-weight: 600;
+}
+.onNew .onNew-box li:nth-child(3){
+    color: #1d1d1f;
+    font-size: 17px;
+}
+.onNew .onNew-img{
+    border-radius: 18px;
+    overflow: hidden;
+}
+.onNew .onNew-img img{
+    border-radius: 18px;
+}
+
+/*      版权代码    */
+#copy{
+    width: 100%;
+    height: 500px;
+    position:absolute;
+    top: 2200px;
+    background-color: #f5f5f7;
+}
+#copy .copy-con{
+    width: 950px;
+    height: 100%;
+    /* border: 1px solid #2997ff; */
+    margin: 0 auto;
+}
+#copy .copy-con ol{
+    height: 360px;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+}
+
+#copy .copy-con ol ul li:first-child{
+    margin: 20px 0px 15px 0px;
+    color: #1d1d1f;
+    font-size: 14px;
+    font-weight: 600;
+}
+#copy .copy-con ol ul li:last-child{
+    margin-bottom: 10px;
+}
+#copy .copy-con ol ul li{
+    margin-bottom: 9.6px;
+    font-size: 12px;
+}
+#copy .copy-con p{
+    color:#6e6e73;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+#copy .copy-con a{
+    color: #2997ff;
+}

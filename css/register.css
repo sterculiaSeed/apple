@@ -1,0 +1,371 @@
+hr{
+    border: 1px solid rgb(239,239,239);
+}
+.nav{
+    height: 44px;
+    background-color: rgba(0,0,0,.8);
+}
+.nav .nav-con{
+    width: 996px;
+    height: 44px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    line-height: 44px;
+    position: relative;
+}
+.nav .nav-con a{
+    font-size: 12px;
+    margin: 0 8px;
+    color: rgb(193, 193, 193);
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/* 购物袋代码 */
+.nav .gow{
+    width: 288px;
+    border: 1px solid #d2d2d7;
+    position: absolute;
+    right: -140px;
+    top: 48px;
+    border-radius: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    z-index: 3;
+}
+ .nav .gow .gow-top{ 
+    color: #6e6e73;
+    padding: 12px 0 23px;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+ .nav .gow .gow-bottom li{ 
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+ .nav .gow .gow-bottom li a{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+ .nav .gow .gow-bottom li i{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/*         APPle ID       */  
+.APPle{
+    height: 52px;
+    width: 100%;
+
+}
+.APPle-con{
+    width: 996px;
+    height: 52px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    line-height: 52px;
+}
+.APPle-con span{
+    float: left;
+    font-size: 24px;
+    color: #111;
+}
+.APPle-con u{
+    float: right;
+    height: 50px;
+}
+.APPle-con u a{
+    line-height: 50px;
+    margin-left: 16px;
+    font-size: 12px;
+    color: #111;
+}
+.APPle-con u a:hover{
+    color: #0070c9;
+}
+
+/* 创建盒子     register */
+.setup{
+    height: 170px;
+    width: 100%;
+    background: url(../images/zhuce.jpg) no-repeat center top;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.setup h2{
+    margin-top: 1px;
+    width: 996px;
+    height: 170px;
+    margin: 0 auto;
+    line-height: 170px;
+    text-align: center;
+    font-size: 40px;
+    /* border: 1px solid rgb(75, 55, 55); */
+    color: rgb(255, 255, 255);
+}
+
+
+/* 表单介绍 */
+.register{
+    width: 100%;
+}
+.reg-con{
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 39px;
+}
+.reg-con .jiesao{
+    width: 460px;
+    margin: 0 auto;
+    text-align: center;
+}
+.reg-con .jiedao span{
+    font-size: 14px
+}
+.reg-con span a{
+    color: #0070c9;
+}
+/* 
+form{
+    margin-top: 40px;
+    border: 1px solid red;
+} */
+form input{
+    width: 460px;
+    height: 52px;
+    /* outline: 1px solid black; */
+    padding-top: 18px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #d6d6d6;
+    font-size: 17px;
+    color: #797979;
+}
+form label{
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    color: #888;
+    /* color: #797979; */
+    /* 增加过渡效果 */
+    transition: 0.1s linear;
+}
+/* 提示文本 */
+form .span,.span1,.span2{
+    font-size: 12px;
+    float: left;
+    margin-top: 5px;
+    color: #d1071c;
+    display: none;
+}
+form .iconfont{
+    font-size: 12px;
+}
+form .box1{
+    box-sizing: border-box;
+    padding: 19px 250px 20px 250px;
+    /* border: 1px solid rgb(22, 20, 20); */
+}
+form .box1 .name{
+    width: 460px;
+    height: 56px;
+}
+form .box1 .name .surname{
+    width: 213px;
+    height: 56px;
+    float: left;
+    position: relative;
+}
+form .box1 .name .username{
+    width: 230px;
+    height: 56px;
+    float: right;
+    position: relative;
+}
+#username{
+    width: 213px;
+}
+#surname{
+    width: 230px;
+}
+form .box1 h3{
+    font-size: 14px;
+    color: #666;
+    margin-top: 34px;
+}
+/* 国家 */
+form .box1 .country{
+    width: 460px;
+    height: 56px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}
+form .box1 select{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    border: 1px solid #d6d6d6;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+/* 日期 密码 确认密码 电话号码 */
+form .data,.pas,.pass,.phnum,.region{
+    width: 460px;
+    height: 62px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+form .ID{
+    width: 460px;
+    height: 62px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+form .box2 ,.box3,.box4,.box5,.box6{
+    box-sizing: border-box;
+    padding: 30px 250px 28px 250px;
+    border-top: 1px solid #e7e7e8;
+}
+
+form .box3 select{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    border: 1px solid #d6d6d6;
+    padding-left: 14px;
+}
+/* 单选框 */
+form .box3{
+    height: 265px;
+}
+form .box3 .radio{
+    float: left;
+}
+form .box3 .radio input{
+    width: 13px;
+    height: 13px;
+}
+/* 复选框 */
+ form .box4  input{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 19px;
+    margin-top: 5px;
+}
+form .box4 .checkbox1>div:nth-child(2),.checkbox2>div:nth-child(2){
+    margin-left: 25px; 
+}
+form .box4  span{
+    font-size: 16px;
+}
+form .box4  small{
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+}
+
+/* 验证码 */
+form .box5{
+    height: 165px;
+}
+form .box5 div:nth-child(1){
+    width: 120px;
+    height: 56px;
+    /* border: 1px solid red; */
+    float: left;
+    margin-right: 38px;
+    background: url(../images/yanzm5.jpg);
+    font-size: 30px;
+    color: #695e5f;
+    padding:11px;
+    box-sizing: border-box;
+    font-weight: 900px;
+}
+form .box5 div:nth-child(2){
+    width: 320px;
+    float: right;
+    height: 115px;
+    /* border: 1px solid red; */
+    margin-top: 2px;
+    position: relative;
+}
+form .box5 div:nth-child(2) input{
+    position: relative;
+    float: right;
+    width: 320px;
+}
+
+form .box5 div:nth-child(2)>div{
+    margin-top: 5px;
+    float: left;
+}
+form .box5 div:nth-child(2)>div a{
+    color: #0070c9;
+    font-size: 14px;
+}
+
+/* 按钮表单 */
+form .box6{
+    text-align: center;
+}
+form .box6 small{
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+form .box6 small a{
+    color: #0070c9;
+}
+form .box6 button{
+    margin: 0 auto;
+    width: 68px;
+    height: 35px;
+    background-color: #2087da;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #1482d0;
+}
+
+/*     版权 */
+.banquan{
+    height: 83px;
+    background-color: #f5f5f7;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+.banquan-con{
+    margin: 0 auto;
+    width: 980px;
+}
+.banquan li{
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: #86868b;
+}
+.banquan li a{
+    color: #0071e3;
+}

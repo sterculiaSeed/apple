@@ -1,0 +1,324 @@
+/*         头部代码      */
+#head{
+    height: 84px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* float: left; */
+}
+#head .ad{
+    height: 40px;
+    background-color: rgb(68, 68, 68);
+}
+#head .ad .ad-con{
+    width: 976px;
+    height: 40px;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+#head .ad .ad-con span{
+    float: right;
+    line-height: 40px;
+    font-size: 12px;
+    color: rgb(154, 154, 156);
+}
+#head .nav{
+    height: 44px;
+    background-color: rgba(0,0,0,.8);
+    /* position: relative; */
+}
+#head .nav .nav-con{
+    width: 996px;
+    height: 44px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    line-height: 44px;
+    position: relative;
+    
+}
+#head .nav .nav-con a{
+    font-size: 12px;
+    margin: 0 8px;
+    color: rgb(193, 193, 193);
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/* 购物袋代码 */
+#head .nav .gow{
+    width: 288px;
+    border: 1px solid #d2d2d7;
+    position: absolute;
+    right: -140px;
+    top: 48px;
+    border-radius: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+#head .nav .gow .gow-top{ 
+    color: #6e6e73;
+    padding: 12px 0 23px;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+#head .nav .gow .gow-bottom li{ 
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+#head .nav .gow .gow-bottom li a{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+#head .nav .gow .gow-bottom li i{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/*           选购代码      */
+#cab{
+    height: 44px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgb(245, 245, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 88px;
+    z-index: 3;
+}
+#cab .cab-con span{
+    font-size: 12px;
+    display: inline-block;
+    padding: 12px 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(62, 62, 64);
+}
+#cab .cab-con span a{
+    color: #2997ff;
+}
+
+
+/*    大图代码 iphone13pro */
+.dat13pro{
+    width: 2560px;
+    height: 692px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 1280px);
+    top: 128px;
+    z-index: 2;
+}
+.dat13pro-con{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:url(../images/iphone_13pro.jpg) no-repeat center bottom;
+    background-size: auto 120%;
+    text-align: center;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+.dat13pro-con h2{
+    font-size: 54px;
+    line-height: 1.07143;
+    font-weight: 550;
+}
+.dat13pro-con h3{
+    font-size: 26px;
+    /* line-height: 1.10722rem; */
+    color: #5a5a5c;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 6px;
+}
+.dat13pro-con li{
+    margin-top: 0.65rem;
+}
+.dat13pro-con a{
+    color: #2997ff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/*    大图代码 iphone13 */
+.dat13{
+    width: 2560px;
+    height: 736px;
+    background:url(../images/iphone_13.jpg) no-repeat center center;
+    position: absolute;
+    left: calc(50% - 1280px);
+    top: 828px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 55px;
+    background-size: auto 120%;
+}
+.dat13 h2{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    color: #fff;
+}
+.dat13 h3{
+    font-size: 28px;
+    /* line-height: 40px; */
+    color: #5a5a5c;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    color: rgb(254, 194, 235);
+    margin: 16px 0px;
+}
+.dat13 li{
+    margin-top: 0.65rem;
+}
+.dat13 a{
+    color: #2997ff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+/* 大图代码 Macbook */
+.datMac{
+    width: 2560px;
+    height: 736px;
+    background:url(../images/macbook.jpg) no-repeat center bottom;
+    position: absolute;
+    left: calc(50% - 1280px);
+    top: 1569px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 55px;
+    background-size: auto 100%;
+    /* border: 1px solid red; */
+}
+.datMac h2{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    /* color: rgb(0, 0, 0); */
+}
+.datMac h3{
+    font-size: 26px;
+    /* line-height: 1.10722rem; */
+    color: #5a5a5c;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 6px;
+}
+.datMac li{
+    margin-top: 0.65rem;
+}
+.datMac a{
+    color: #2997ff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/*          详情图         */
+#detalis{
+    width: 2560px;
+    height: 1740px;
+    /* border: 1px solid red; */
+    position:absolute;
+    left: calc(50% - 1280px);
+    top: 2260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#detalis>div{
+    width: 1270px;
+    height: 580px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+#detalis>div:nth-child(1){
+    box-sizing: border-box;
+    padding-top: 385px;
+}
+#detalis>div h4{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 53px;
+}
+#detalis>div h5{
+    font-size: 18px;
+    /* line-height: 1.2381; */
+    color: #5a5a5c;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 4px;
+}
+#detalis>div li{
+    margin-top: 0.65rem;
+}
+#detalis>div a{
+    color: #2997ff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/*      版权代码    */
+#copy{
+    width: 100%;
+    height: 500px;
+    position:absolute;
+    top: 4000px;
+    background-color: #f5f5f7;
+}
+#copy .copy-con{
+    width: 950px;
+    height: 100%;
+    /* border: 1px solid #2997ff; */
+    margin: 0 auto;
+}
+#copy .copy-con ol{
+    height: 360px;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+}
+
+#copy .copy-con ol ul li:first-child{
+    margin: 20px 0px 15px 0px;
+    color: #1d1d1f;
+    font-size: 14px;
+    font-weight: 600;
+}
+#copy .copy-con ol ul li:last-child{
+    margin-bottom: 10px;
+}
+#copy .copy-con ol ul li{
+    margin-bottom: 9.6px;
+    font-size: 12px;
+}
+#copy .copy-con p{
+    color:#6e6e73;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+#copy .copy-con a{
+    color: #2997ff;
+}

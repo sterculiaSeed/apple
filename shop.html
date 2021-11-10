@@ -1,0 +1,339 @@
+<!--
+ *                        _oo0oo_
+ *                       o8888888o
+ *                       88' . '88
+ *                       (| -_- |)
+ *                       0\  =  /0
+ *                     ___/`---'\___
+ *                   .' \|     |// '.
+ *                  / \|||  :  |||// \
+ *                 / _||||| -:- |||||- \
+ *                |   | \\  - /// |   |
+ *                | \_|  ''\---/''  |_/ |
+ *                \  .-\__  '-'  ___/-. /
+ *              ___'. .'  /--.--\  `. .'___
+ *           . ''<  `.___\_<|>_/___.' >' . ''
+ *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *          \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *      =====`-.____`.___ \_____/___.-`___.-'=====
+ *                        `=---='
+ * 
+ * 
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * 
+ *            佛祖保佑       永不宕机     永无BUG
+ -->
+<!-- 商店页面  -->
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>在线商店</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2888979_v9l9hqzwpar.css">
+    <link rel="stylesheet" href="./lib/swiper/swiper.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .lunbo {
+            width: 100%;
+            margin: 0 auto;
+            /* border: 1px solid black; */
+            background-color: #fff;
+
+        }
+
+        .mySwiper {
+            width: 996px;
+            height: 52px;
+        }
+
+        .swiper-slide {
+            font-size: 12px;
+        }
+
+        .swiper-wrapper a {
+            color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 head -->
+    <div id='head'>
+        <!-- 导航栏 nav -->
+        <div class="nav">
+            <div class="nav-con">
+                <li>
+                    <a href="./index.html"><i class=" iconfont icon-pingguo"></i></a>
+                </li>
+                <li>
+                    <a href="">商店</a>
+                </li>
+                <li><a href="./details.html">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">家居</a></li>
+                <li><a href="">Apple 度家</a></li>
+                <li><a href="">配件</a></li>
+                <li><a href="">技术支持</a></li>
+                <li><a href=""><i class="iconfont  icon-sousuo"></i></a></li>
+                <li><a href="" class="gouwudai"><i class="iconfont  icon-gouwudai"></i></a>
+                </li>
+                <div class="gow">
+                    <div class="gow-top">
+                        <p>你的购物袋是空的</p>
+                    </div>
+                    <div class="gow-bottom">
+                        <li><a href="./shopbag.html"><i class="iconfont icon-gouwudai"></i>购物袋</a></li>
+                        <li><a href=""><i class="iconfont icon-aixin"></i>收藏</a></li>
+                        <li><a href=""><i class="iconfont icon-hezi301"></i>订单</a></li>
+                        <li><a href=""><i class="iconfont icon-shezhi"></i>账户</a></li>
+                        <li><a href=""><i class="iconfont icon-zhanghu1"></i><u>登录</u></a></li>
+                    </div>
+                </div>
+            </div>
+            <!-- 购物袋 gow -->
+
+        </div>
+    </div>
+    <!-- 轮博图 Swiper -->
+    <div class="lunbo">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">符合条件的情况下可享免息分期付款。<a>进一步了解</a></div>
+                <div class="swiper-slide">用你符合条件的设备进行折抵，在选购新产品时享受折抵优惠。<a>进一步了解</a></div>
+                <div class="swiper-slide">提早动手，为节日选购称心好礼。</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- 商店介绍 shops -->
+    <div class="shops">
+        <div class="shops-con">
+            <div class="shops-left">
+                <h1>这个商店,<u>产品都称心,体验更如意。</u></h1>
+            </div>
+            <div class="shops-right">
+                <div class="shops-r-top">
+                    <div class="shops-r-t-left"><img src="./images/商店人头.png" alt=""></div>
+                    <div class="shops-r-t-right">
+                        <li>需要协助选购？</li>
+                        <a>咨询 Specialist 专家</a>
+                    </div>
+                </div>
+                <div class="shops-r-bottom">
+                    <div class="shops-r-b-left">
+                        <img src="./images/商店人头2.png" alt="">
+                    </div>
+                    <div class="shops-r-b-right">
+                        <li>前往 Apple Store 零售店</li>
+                        <a>查找附近的零售店</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 商店下图片 Mac -->
+    <div class="Mac">
+        <div class="Mac-con">
+            <!-- <div class="box1">
+                <div class="Mac-img"><img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-mac-nav-202110?wid=200&hei=130&fmt=png-alpha&.v=1632870674000"
+                        alt=""></div>
+                <div class="Mac-a"><a>Mac</a></div>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- 商店上新 On the new-->
+    <div class="onNew">
+        <div class="onNew-h2">
+            <h2>上新了，<u>快来认识一下这些新朋友。</u></h2>
+        </div>
+        <div class="onNew-bottom">
+            <div class="onNew-b-con">
+                <!-- <div class="onNew-b-box">
+                    <div class="onNew-box">
+                        <li>ipad mini</li>
+                        <li>小写的大</li>
+                        <li>RMB 3799 起</li>
+                    </div>
+                    <div class="onNew-img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipadmini-202109?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1629943258000"
+                            alt="">
+                    </div>
+                </div> -->
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- 版权  copyright -->
+    <div id="copy">
+        <div class="copy-con">
+            <div style="margin-top: 20px;">
+                <span><i class="iconfont icon-pingguo"></i></span>
+            </div>
+            <ol>
+                <ul>
+                    <li>选购及了解</li>
+                    <li>商店</li>
+                    <li>Mac</li>
+                    <li>iPad</li>
+                    <li>iPhone</li>
+                    <li>Watch</li>
+                    <li>AirPods</li>
+                    <li>家居</li>
+                    <li>iPod touch</li>
+                    <li>AirTag</li>
+                    <li>配件</li>
+                    <li>App Store 充值卡</li>
+                </ul>
+                <ul>
+                    <li>服务</li>
+                    <li>Apple Music</li>
+                    <li>iCloud</li>
+                    <li>Apple Pay</li>
+                    <li>Apple 博客</li>
+                    <li>App Store</li>
+                </ul>
+                <ul>
+                    <li>账户</li>
+                    <li>管理你的Apple ID</li>
+                    <li>Apple Store 账户</li>
+                    <li>iCloud.com</li>
+                </ul>
+                <ul>
+                    <li>Apple Store 商店</li>
+                    <li>查找零售店</li>
+                    <li>Genius Bar 天才吧</li>
+                    <li>Today at Apple</li>
+                    <li>Apple夏令营</li>
+                    <li>Apple Store App</li>
+                    <li>翻新和优惠</li>
+                    <li>分期付款</li>
+                    <li>Apple Trade In 换购计划</li>
+                    <li>订单状态</li>
+                    <li>选购帮助</li>
+                </ul>
+                <ul>
+                    <li>商店应用</li>
+                    <li>Apple与商务</li>
+                    <li>商务选购</li>
+                </ul>
+                <ul>
+                    <li>教育应用</li>
+                    <li>Apple与教育</li>
+                    <li>离校师生选购</li>
+                    <!-- <li>教育应用</li>
+                    <li>Apple与教育</li>
+                    <li>离校师生选购</li> -->
+                </ul>
+                <ul>
+                    <li>Apple价值观</li>
+                    <li>辅助功能</li>
+                    <li>环境责任</li>
+                    <li>隐私</li>
+                    <li>供应商责任</li>
+                </ul>
+                <ul>
+                    <li>关于Apple</li>
+                    <li>Newsroom</li>
+                    <li>Apple管理层</li>
+                    <li>工作计划</li>
+                    <li>创造就业</li>
+                    <li>商业道德与合规性</li>
+                    <!-- <li>活动</li>
+                    <li>联系Apple</li> -->
+                </ul>
+            </ol>
+            <p>更多选购方式:<a>查找你附近的Apple Store零售店</a>及<a>更多门店</a>，或者致电400-666-8800。</p>
+            <hr>
+            <p>Copyright⑥2021 Apple Inc.保留所有权利。</p>
+            <p>京ICP备10214630营业执照无线电发射设备销售备案编号11201910351200</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/00-FZ-AJAX.js"></script>
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./layer/layer.js"></script>
+<script src="./js/cookie.js"></script>
+<script src="./js/gowudai.js"></script>
+<script src="./js/shop.js"></script>
+<!-- 轮博图插件 -->
+<script src="./lib/swiper/swiper.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        speed: 2000,
+        // 自动切换
+        autoplay: {
+            delay: 1000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+        },
+        // 环路效果
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>

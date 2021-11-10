@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--
+ *                        _oo0oo_
+ *                       o8888888o
+ *                       88" . "88
+ *                       (| -_- |)
+ *                       0\  =  /0
+ *                     ___/`---'\___
+ *                   .' \\|     |// '.
+ *                  / \\|||  :  |||// \
+ *                 / _||||| -:- |||||- \
+ *                |   | \\\  - /// |   |
+ *                | \_|  ''\---/''  |_/ |
+ *                \  .-\__  '-'  ___/-. /
+ *              ___'. .'  /--.--\  `. .'___
+ *           ."" '<  `.___\_<|>_/___.' >' "".
+ *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *          \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *      =====`-.____`.___ \_____/___.-`___.-'=====
+ *                        `=---='
+ * 
+ * 
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * 
+ *            佛祖保佑       永不宕机     永无BUG
+ -->
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <!-- 默认样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2888979_1vl5ypje2hr.css">
+    <!-- css样式 -->
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 nav -->
+    <div class="nav">
+        <div class="nav-con">
+            <li>
+                <a href="./index.html"><i class=" iconfont icon-pingguo"></i></a>
+            </li>
+            <li>
+                <a href="./shop.html">商店</a>
+            </li>
+            <li><a href="">Mac</a></li>
+            <li><a href="">iPad</a></li>
+            <li><a href="">iPhone</a></li>
+            <li><a href="">Watch</a></li>
+            <li><a href="">AirPods</a></li>
+            <li><a href="">家居</a></li>
+            <li><a href="">Apple 度家</a></li>
+            <li><a href="">配件</a></li>
+            <li><a href="">技术支持</a></li>
+            <li><a href=""><i class="iconfont  icon-sousuo"></i></a></li>
+            <li><a href="" class="gouwudai"><i class="iconfont  icon-gouwudai"></i></a></li>
+            <!-- 购物袋 gow -->
+            <div class="gow">
+                <div class="gow-top">
+                    <p>你的购物袋是空的</p>
+                </div>
+                <div class="gow-bottom">
+                    <li><a href="./shopbag.html"><i class="iconfont icon-gouwudai"></i>购物袋</a></li>
+                    <li><a href=""><i class="iconfont icon-aixin"></i>收藏</a></li>
+                    <li><a href=""><i class="iconfont icon-hezi301"></i>订单</a></li>
+                    <li><a href=""><i class="iconfont icon-shezhi"></i>账户</a></li>
+                    <li><a href=""><i class="iconfont icon-zhanghu1"></i><u>登录</u></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录盒子 -->
+    <div id="login">
+        <h1>请登录。</h1>
+        <div class="cuowu">
+            你输入的账户信息不正确
+        </div>
+        <form action="">
+            <div class="input">
+                <input type="text" id="username" autocomplete=off>
+                <label for="">Apple ID</label>
+            </div>
+            <div class="tishi"></div>
+            <div class="password">
+                <input type="password" id="password">
+                <label for="">密码</label>
+            </div>
+            <div class="tishi1"></div>
+            <p>你的 Apple ID 是你用来登录 iTunes、App Store 和 iCloud 的电子邮件地址或手机号码。</p>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">登录</button>
+            </div>
+        </form>
+        <span><a href="">忘了自己的 Apple ID 或密码？</a></span><br>
+        <span><a href="./register.html">没有Apple ID 或密码？立即创建一个</a></span>
+
+    </div>
+    <!-- 帮助 -->
+    <div class="bangzhu">
+        <li>
+            需要更多帮助？
+            <a>立即在线交流</a>
+            (在新窗口中打开) 或致电 400-666-8800。
+        </li>
+    </div>
+    <!-- 版权 -->
+    <div class="banquan">
+        <div class="banquan-con">
+            <p>Apple Store 在线商店采用符合业界标准的加密技术对您提交的信息进行保密。进一步了解我们的安全政策。</p>
+        </div>
+        <li>更多选购方式：<a>查找你附近的 Apple Store 零售店</a>及<a>更多门店</a>，或者致电 400-666-8800。</li>
+        <li>
+            Copyright © 2021 Apple Inc. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;保留所有权利。隐私政策 | 使用条款 | 销售政策 | 法律信息
+            | 网站地图
+        </li>
+    </div>
+</body>
+
+</html>
+<!-- JQuery插件 -->
+<script src="./js/jquery-3.6.0.js"></script>
+<!-- bootstrap插件 -->
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/cookie.js"></script>
+<!-- js -->
+<script src="./js/login.js"></script>
+<!-- ajax -->
+<script src="./js/00-FZ-AJAX.js"></script>
+<script src="./js/gowudai.js"></script>

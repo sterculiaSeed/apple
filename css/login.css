@@ -1,0 +1,199 @@
+
+/* 导航栏 */
+.nav{
+    height: 44px;
+    background-color: rgba(0,0,0,.8);
+}
+.nav .nav-con{
+    width: 996px;
+    height: 44px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    line-height: 44px;
+    position: relative;
+}
+.nav .nav-con a{
+    font-size: 12px;
+    margin: 0 8px;
+    color: rgb(193, 193, 193);
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/* 购物袋代码 */
+ .nav .gow{
+    width: 288px;
+    border: 1px solid #d2d2d7;
+    position: absolute;
+    right: -140px;
+    top: 48px;
+    border-radius: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    z-index: 3;
+}
+ .nav .gow .gow-top{ 
+    color: #6e6e73;
+    padding: 12px 0 23px;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+ .nav .gow .gow-bottom li{ 
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+ .nav .gow .gow-bottom li a{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+ .nav .gow .gow-bottom li i{ 
+    color: #0066cc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+/*           登录盒子      */
+#login{
+    width: 980px;
+    height: 715px;
+    margin: 0 auto;
+    /* border:1px solid red; */
+}
+#login h1{
+    line-height: 200px;
+    font-size: 36px;
+    font-weight: 600;
+}
+#login .cuowu{
+    width: 408px;
+    height: 47px;
+    line-height: 47px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #fff2f4;
+    border-radius: 12px;
+    border: 1px solid #e30000;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    display: none;
+}
+#login form{
+    width: 408px;
+}
+#login form .input{
+    height: 60px;
+    /* margin-bottom: 18px; */
+   
+}
+#login form .password{
+    height: 60px;
+    /* margin-top: 10px; */
+    /* margin-top: 18px; */
+}
+#login input{
+    width: 408px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    /* position: relative; */
+    box-sizing:border-box;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #1d1d1f;
+    outline: none;
+}
+#login label{
+    position: relative;
+    left: 20px;
+    top:-54px;
+    color: #86868d;
+    font-size: 18px;
+    /* 增加过渡效果 */
+    transition: 0.1s linear;
+}
+#login form .tishi,#login form .tishi1{
+    /* margin-top: -12px; 
+    margin-bottom: -12px;  */
+    margin: 5px 0px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #e30000;
+}
+#login form p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #1d1d1f;
+    /* margin-bottom: 35px; */
+    font-family: SF Pro SC,SF Pro Text,SF Pro Icons,AOS Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+}
+#login form button{
+    width: 408px;
+    height: 60px;
+    background-color: #0071e3;
+    border-radius: 12px;
+    color: #fff;
+    margin: 40px 0px 20px 0;
+}
+#login span{
+    line-height: 30px;
+}
+#login a{
+    color: #0066cc;
+}
+
+
+    
+    /* 帮助盒子 */
+.bangzhu{
+    border-top: 1px solid #ccc;
+    /* margin-top: 44px; */
+    height: 70px;
+    line-height: 70px;
+}
+.bangzhu li{
+    width: 980px;
+    height: 67px;
+    margin: 0 auto;
+}
+.bangzhu a{
+    color: #0066cc;
+    font-size: 16px;
+}
+
+/*     版权 */
+.banquan{
+    height: 150px;
+    background-color: #f5f5f7;
+}
+.banquan-con{
+    margin: 0 auto;
+    width: 980px;
+}
+.banquan-con p{
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #ccc;
+    color: #86868b;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.banquan li{
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 25px;
+    color: #86868b;
+}
+.banquan li a{
+    color: #0071e3;
+}
