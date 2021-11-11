@@ -1,14 +1,3 @@
-// 点击购物袋出现
-let divgouw = document.querySelector('.gow');
-document.querySelector('.gouwudai').onclick = function (e) {
-    // 清除默认事件
-    e.preventDefault();
-    if (divgouw.style.display === 'block') {
-        divgouw.style.display = 'none';
-    } else {
-        divgouw.style.display = 'block';
-    }
-}
 
 // 登录 退出的按钮
 let zhanghu = document.querySelector('.gow-bottom u');
@@ -26,6 +15,7 @@ window.onload = function () {
         // 如果data数据为空
         // console.log(data)
         if (data == null) {
+            console.log(12345)
             $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
             $('.gow-center button').css('display', 'none');
         } else {
@@ -83,7 +73,17 @@ window.onload = function () {
     }
 }
 
-
+// 点击购物袋出现
+let divgouw = document.querySelector('.gow');
+document.querySelector('.gouwudai').onclick = function (e) {
+    // 清除默认事件
+    e.preventDefault();
+    if (divgouw.style.display === 'block') {
+        divgouw.style.display = 'none';
+    } else {
+        divgouw.style.display = 'block';
+    }
+}
 zhanghu.onclick = function (e) {
     // 清除默认事件
     e.preventDefault();
@@ -91,8 +91,7 @@ zhanghu.onclick = function (e) {
         delCookie('yonghuming');
         zhanghu.innerHTML = '登录';
         // 用户没登录
-        $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
-        $('.gow-center button').css('display', 'none');
+
     } else {
         location.href = './login.html'
     }
