@@ -180,6 +180,7 @@ $('.anniu>button').click(function () {
                 $('.tianjia-con').parent().fadeOut(2000, 'linear', function () { });
             }, 10000);
             // location.href = './shopbag.html';
+
         } else {
             // 如果之前添加过该商品在购物袋中 本地存储有该商品的数据
             let data = JSON.parse(localData);
@@ -214,6 +215,56 @@ $('.anniu>button').click(function () {
                 setTimeout(() => {
                     $('.tianjia-con').parent().fadeOut(2000, 'linear', function () { });
                 }, 10000);
+
+
+                // 绚烂购物车小窗口
+                let shops = data.map(v => {
+                    if (v.username === username) {
+                        return v.shop;
+                    }
+                })
+                // shops会取出所有所有商品名称 用filter过滤undefind
+                let shop = shops.filter(v => v !== undefined);
+                // 加判断 判断shop是否为空 因为可能没添加过购物车
+                if (!shop.length == 0) {
+                    // 不等于0说明有数据 数据长度绚烂在购物车盒子数字中
+                    $('.gouwudai div span').text(`${shop.length}`).parent().css('display', 'block');
+                    // 开始绚烂得到的数据
+                    let str = '';
+                    shop.forEach(elem => {
+                        $.ajax({
+                            url: './php/details.php',
+                            data: {
+                                name: elem,
+                                iss: 13
+                            },
+                            type: 'get',
+                            dataType: 'json',
+                            success(res) {
+                                res.data.forEach(item => {
+                                    str += `
+                            <div class="gow-t-top">
+                            <div class="gow-top-left">
+                                <img src="${item.imgpath.split('+++')[1]}" alt="">
+                            </div>
+                            <div class="gow-top-right">
+                                <span>${item.name}</span>
+                            </div>
+                        </div>
+                          `
+                                })
+                                $('.gow-top').html(str);
+                            }
+                        })
+                    })
+                    // 显示结账按钮
+                    $('.gow-center button').css('display', 'block');
+                } else {
+                    // 本地存储中没有数据
+                    $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
+                    $('.gow-center button').css('display', 'none');
+                    $('.gouwudai div span').text(`${shop.length}`).parent().css('display', 'none');
+                }
             }
         }
     }

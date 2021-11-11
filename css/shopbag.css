@@ -50,7 +50,7 @@
 
 
 /* 购物袋代码 */
- .nav .gow{
+.nav .gow{
     width: 288px;
     border: 1px solid #d2d2d7;
     position: absolute;
@@ -61,28 +61,84 @@
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     display: none;
+    z-index: 3;
 }
- .nav .gow .gow-top{ 
+.nav .gow .gow-top{ 
     color: #6e6e73;
-    padding: 12px 0 23px;
+    padding-top: 12px;
     font-size: 12px;
     margin: 0;
     text-align: center;
 }
- .nav .gow .gow-bottom li{ 
+.nav .gow .gow-t-top{
+    /* border: 1px solid red; */
+    height: 70px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+}
+.nav .gow .gow-top>div:first-child{
+    border-top: none;
+}
+.nav .gow .gow-t-top .gow-top-left{
+    float: left;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+.nav .gow .gow-t-top .gow-top-left img{
+  width: 100%;
+  height: 100%;
+}
+.nav .gow .gow-t-top .gow-top-right{
+    line-height: 70px;
+    float: left;
+}
+.nav .gow .gow-center button{
+    width: 246px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #0071e3;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin-bottom: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav .gow .gow-bottom li{ 
     font-size: 12px;
     border-top: 1px solid #ccc;
     font-size: 12px;
 }
- .nav .gow .gow-bottom li a{ 
+.nav .gow .gow-bottom li a{ 
     color: #0066cc;
     font-size: 12px;
     margin-left: 10px;
 }
- .nav .gow .gow-bottom li i{ 
+.nav .gow .gow-bottom li i{ 
     color: #0066cc;
     font-size: 12px;
     margin-right: 10px;
+}
+/* 购物袋上数字代码 */
+.nav .gouwudai div{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 21px;
+    right: 3px;
+    border-radius: 50%;
+    display: none;
+}
+.nav .gouwudai div span{
+    position: absolute;
+    top: -14px;
+    left: 3.5px;
+    color: black;
+    font-size: 12px;
 }
 
 

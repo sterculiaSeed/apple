@@ -69,10 +69,13 @@ window.onload = function () {
                         }
                     })
                 })
+                // 显示结账按钮
                 $('.gow-center button').css('display', 'block');
             } else {
+                // 本地存储中没有数据
                 $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
                 $('.gow-center button').css('display', 'none');
+                $('.gouwudai div span').text(`${shop.length}`).parent().css('display', 'none');
             }
         }
     } else {
@@ -87,10 +90,14 @@ zhanghu.onclick = function (e) {
     if (zhanghu.innerHTML.charAt(0) == '注') {
         delCookie('yonghuming');
         zhanghu.innerHTML = '登录';
+        // 用户没登录
+        $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
+        $('.gow-center button').css('display', 'none');
     } else {
         location.href = './login.html'
     }
 }
+
 $('.gow-center button').click(function () {
     location.href = './shopbag.html';
 })

@@ -209,6 +209,13 @@ $(function () {
             })
             // 重新写入购物车进本地数据
             localStorage.setItem('data', JSON.stringify(dataArr));
+            // 修改上面总价
+            let str2 = 0;
+            // 循环每个商品总价 然后赋值给总的价格
+            $('.shop-cent-cent #uu').each((i, v) => {
+                str2 += $(v).text() - 0;
+            })
+            zongjia(str2)
             //判断购物车中数据是否为空
             let index = dataArr.findIndex(v => v.username === username);
             if (index == -1) {
@@ -236,6 +243,55 @@ $(function () {
             setTimeout(() => {
                 $('.tianjia-con').parent().fadeOut(2000, 'linear', function () { });
             }, 10000);
+            console.log(dataArr);
+            // 绚烂购物车小窗口
+            let shops = dataArr.map(v => {
+                if (v.username === username) {
+                    return v.shop;
+                }
+            })
+            // shops会取出所有所有商品名称 用filter过滤undefind
+            let sho = shops.filter(v => v !== undefined);
+            // 加判断 判断shop是否为空 因为可能没添加过购物车
+            if (!sho.length == 0) {
+                // 不等于0说明有数据 数据长度绚烂在购物车盒子数字中
+                $('.gouwudai div span').text(`${sho.length}`).parent().css('display', 'block');
+                // 开始绚烂得到的数据
+                let st = '';
+                sho.forEach(elem => {
+                    $.ajax({
+                        url: './php/details.php',
+                        data: {
+                            name: elem,
+                            iss: 13
+                        },
+                        type: 'get',
+                        dataType: 'json',
+                        success(res) {
+                            res.data.forEach(item => {
+                                st += `
+                            <div class="gow-t-top">
+                            <div class="gow-top-left">
+                                <img src="${item.imgpath.split('+++')[1]}" alt="">
+                            </div>
+                            <div class="gow-top-right">
+                                <span>${item.name}</span>
+                            </div>
+                        </div>
+                          `
+                            })
+                            $('.gow-top').html(st);
+                        }
+                    })
+                })
+                // 显示结账按钮
+                $('.gow-center button').css('display', 'block');
+            } else {
+                // 本地存储中没有数据
+                $('.gow-top').html('<p style="margin:15px 0px">你的购物袋是空的</p>');
+                $('.gow-center button').css('display', 'none');
+                $('.gouwudai div span').text(`${shop.length}`).parent().css('display', 'none');
+            }
         })
         // 绚烂结束关闭弹出层
         layer.close(index);
