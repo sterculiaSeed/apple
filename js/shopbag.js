@@ -333,14 +333,22 @@ $(function () {
         }
         // 修改页面一进来购物车中的数量
         function sele() {
+            // 获取本地数据
             let loacnum = localStorage.getItem('data');
-            let num = JSON.parse(loacnum).map(v => {
-                return v.num;
-                // }
+            // 获取本地数据中的全部num值
+            let aa = JSON.parse(loacnum).map(v => {
+                if (v.username === username) {
+                    return v.num;
+                }
             })
-            // console.log(num)
+            // 过滤掉不属于这个用户的num值
+            let num = aa.filter(v => v !== undefined);
+            // 循环遍历进select值中
+            // 遍历selct标签 第一个标签对应num中的第一个值
             for (let i = 0; i < $('.shop-cent select').length; i++) {
+                // 遍历select标签中的option值 
                 for (let j = 0; j < $('.shop-cent select')[i].length; j++) {
+                    // 查到预期数值的option 增加selected标签
                     if ($($('.shop-cent select')[i][j]).text() == num[i]) {
                         $($('.shop-cent select')[i][j]).prop('selected', true);
                     }
