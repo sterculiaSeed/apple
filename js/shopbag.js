@@ -360,8 +360,8 @@ $(function () {
             // console.log($(this))
             layer.open({
                 type: 1,
-                area: ['150px', '150px'], //宽高
-                content: '<img src="./images/商店人头.png" style="text-align:center;">'
+                area: ['250px', '320px'], //宽高
+                content: '<img src="./images/商店人头.png" style="text-align:center; width:250px;height:250px;">'
             });
         })
 

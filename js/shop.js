@@ -1,5 +1,5 @@
 // 在页面数据还没渲染完成之前，页面加载状态，添加一个加载层
-let index = layer.load(1, { shade: 0.3 })
+let index = layer.load(1, { shade: [1, '#fff'] })
 
 // 请求商定详情数据
 getList()

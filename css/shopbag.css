@@ -91,7 +91,7 @@
 }
 .nav .gow .gow-t-top .gow-top-right{
     line-height: 70px;
-    float: left;
+    /* float: left; */
 }
 .nav .gow .gow-center button{
     width: 246px;

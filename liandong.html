@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 省 -->
+    <select id="province">
+        <option value="">1</option>
+    </select>
+    <!-- 市 -->
+    <select id="city">
+        <option value="">2</option>
+    </select>
+    <!-- 区 -->
+    <select id="district">
+        <option value="">3</option>
+    </select>
+    <!-- 镇 -->
+    <select id="area">
+        <option value="">4</option>
+    </select>
+</body>
+
+</html>
+<script src="./js/jquery-3.6.0.js"></script>
+<script>
+    /*
+
+    */
+    // $('#province').click(function () {
+    $.ajax({
+        url: './php/region/province.php',
+        type: 'get',
+        dataType: 'json',
+        success(res) {
+            let str = ''
+            res.forEach(elem => {
+                // console.log(elem.name)
+                str += `<option value="${elem.province_id}">${elem.name}</option>`
+            });
+            $('#province').html(str);
+
+            $('#province').change(function () {
+                $.ajax({
+                    url: './php/region/city.php',
+                    type: 'get',
+                    dataType: 'json',
+                    data: { pid: $('#province').val() },
+                    success(res) {
+                        let str = ''
+                        res.forEach(elem => {
+                            str += `<option value="${elem.city_id}">${elem.name}</option>`
+                        });
+                        $('#city').html(str);
+
+                        $('#city').change(function () {
+                            $.ajax({
+                                url: './php/region/area.php',
+                                type: 'get',
+                                dataType: 'json',
+                                data: { cid: $('#city').val() },
+                                success(res) {
+                                    let str = ''
+                                    res.forEach(elem => {
+                                        str += `<option value="${elem.area_id}">${elem.name}</option>`
+                                    });
+                                    $('#district').html(str);
+
+                                    $('#district').change(function () {
+                                        $.ajax({
+                                            url: './php/region/town.php',
+                                            type: 'get',
+                                            dataType: 'json',
+                                            data: { aid: $('#district').val() },
+                                            success(res) {
+                                                let str = ''
+                                                res.forEach(elem => {
+                                                    str += `<option value="${elem.city_id}">${elem.name}</option>`
+                                                });
+                                                $('#area').html(str);
+
+                                            }
+                                        })
+                                    })
+                                }
+                            })
+                        })
+                    }
+                })
+            })
+        }
+    })
+    // })
+</script>
