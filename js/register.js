@@ -212,7 +212,7 @@ $('button').click(function (e) {
             pas: $('input[name=pas]').val(),
             phnum: $('input[name=phnum]').val(),
         }
-        console.log(data);
+        // console.log(data);
         // ajax请求 
         pAjax({
             url: './php/petname.php',

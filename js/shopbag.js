@@ -215,6 +215,8 @@ $(function () {
             $('.shop-cent-cent #uu').each((i, v) => {
                 str2 += $(v).text() - 0;
             })
+            // str2 = String(str2).replace(/(?!^)(?=(\d{3})+\.)/g, ',');
+            // console.log(str2);
             zongjia(str2)
             //判断购物车中数据是否为空
             let index = dataArr.findIndex(v => v.username === username);
@@ -230,11 +232,11 @@ $(function () {
                 </div>
                 </div>`);
                 let can = $(this).prev().find('span:eq(0)').text();
-                // 动画效果
+                // 移除商品动画效果
                 $('.tianjia-con').html(`<p><span>${can}</span>已从购物袋中移除</p>`).parent().fadeIn(2000, 'linear', function () { })
                 setTimeout(() => {
                     $('.tianjia-con').parent().fadeOut(2000, 'linear', function () { });
-                }, 10000);
+                }, 5000);
             }
             // 移除成功的提示信息
             let can = $(this).prev().find('span:eq(0)').text();
@@ -242,8 +244,8 @@ $(function () {
             $('.tianjia-con').html(`<p><span>${can}</span>已从购物袋中移除</p>`).parent().fadeIn(2000, 'linear', function () { })
             setTimeout(() => {
                 $('.tianjia-con').parent().fadeOut(2000, 'linear', function () { });
-            }, 10000);
-            console.log(dataArr);
+            }, 5000);
+            // console.log(dataArr);
             // 绚烂购物车小窗口
             let shops = dataArr.map(v => {
                 if (v.username === username) {
