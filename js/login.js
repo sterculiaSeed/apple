@@ -104,7 +104,6 @@ document.querySelector('button').onclick = function (e) {
             cuowu.style['display'] = 'block';
             // 获取焦点
             email.focus();
-            console.log(1234);
             return;
         }
         if (!reg2.test(data.pas)) {
