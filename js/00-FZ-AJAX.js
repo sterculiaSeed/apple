@@ -12,7 +12,7 @@
 
 function ajax(obj) {
     // 判断URL地址是否传递
-    if (!obj.zzz) {
+    if (!obj.url) {
         //throw Error表示手动的抛出错误
         throw Error('url值必须传递');
     }
